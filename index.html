@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your music player</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo1.png" alt="Spotify Background"><span>Spotify</span></li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="songlist">
+            <h1>Best of 2021-Songs</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="cover/1.jpg" alt="1">
+                    <span class="textSong">Aajaa Mahi</span>
+                    <span class="songListPlay"><span class="timeStamp">05:30pm <i  id='0'class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover/2.jpg" alt="1">
+                    <span class="textSong">Bhai ka birthday</span>
+                    <span class="songListPlay"><span class="timeStamp">05:30pm <i id='1' class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover/3.jpg" alt="1">
+                    <span class="textSong">Kusu kusu</span>
+                    <span class="songListPlay"><span class="timeStamp">05:30pm <i id='2' class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover/4.jpg" alt="1">
+                    <span class="textSong">param sundari</span>
+                    <span class="songListPlay"><span class="timeStamp">05:30pm <i id='3' class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover/5.jpg" alt="1">
+                    <span class="textSong">Raatan-lamaniya</span>
+                    <span class="songListPlay"><span class="timeStamp">05:30pm <i id='4' class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover/6.jpg" alt="1">
+                    <span class="textSong">Tip-tip-barsa-pani</span>
+                    <span class="songListPlay"><span class="timeStamp">05:30pm <i id='5' class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="cover.jpg" alt="1">
+                    <span class="textSong">Let me love you</span>
+                    <span class="songListPlay"><span class="timeStamp">05:30pm <i id='6' class="fas songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                
+                
+                
+             </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="progressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="fas fa-2x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="music.gif" width="100px" alt="" id='gif'> <span id="masterSongName">Aajaa Mahi-punjabi beats</span> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
